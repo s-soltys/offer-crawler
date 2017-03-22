@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/s-soltys/offer-crawler#readme",
   "dependencies": {
-    "simplecrawler": "^1.1.1"
+    "@types/jquery": "^2.0.41",
+    "@types/lodash": "^4.14.57",
+    "@types/node": "^7.0.8",
+    "crawler": "^1.0.3"
   }
 }
