@@ -2,9 +2,9 @@
   "name": "offer-crawler",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "crawl": "tsctsc",
+    "crawl": "tsc && node dist/index.js",
     "test": "test"
   },
   "repository": {
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/s-soltys/offer-crawler/issues"
   },
-  "homepage": "https://github.com/s-soltys/offer-crawler#readme"
+  "homepage": "https://github.com/s-soltys/offer-crawler#readme",
+  "dependencies": {
+    "simplecrawler": "^1.1.1"
+  }
 }
