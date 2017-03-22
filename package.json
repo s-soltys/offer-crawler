@@ -1,0 +1,19 @@
+{
+  "name": "offer-crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s-soltys/offer-crawler.git"
+  },
+  "author": "szymon.soltysiak@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s-soltys/offer-crawler/issues"
+  },
+  "homepage": "https://github.com/s-soltys/offer-crawler#readme"
+}
