@@ -17,7 +17,7 @@ let crawl = CrawlRx(Pages)
                 .map(e => ({ keyword, text: e.text(), href: e.prop('href') as string }));
         });
 
-        let links = res.map(r => r.href);
+        let links = res.map(r => 'http://teatrwielki.pl/' + r.href);
 
         console.log(
         `${colors.cyan('***')} Crawled to ${colors.cyan(options.uri)} with status ${colors.cyan(response.statusCode)}
@@ -29,4 +29,4 @@ let crawl = CrawlRx(Pages)
         return CrawlRx(links).map(({ response, options, $ }) => 'Success: ' + $('title').text() + ' code ' + response.statusCode);
     });
 
-crawl.subscribe(console.log, console.error);
+crawl.subscribe(console.log, console.error, () => console.log("Completed..."));
