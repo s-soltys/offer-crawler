@@ -26,6 +26,9 @@
     "colors": "^1.1.2",
     "crawler": "^1.0.3",
     "forever": "^0.15.3",
-    "node-schedule": "^1.2.1"
+    "node-schedule": "^1.2.1",
+    "osmosis": "^1.1.4",
+    "rxjs": "^5.2.0",
+    "typescript-array-extensions": "^0.4.3"
   }
 }
