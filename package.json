@@ -4,8 +4,10 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "crawl": "tsc && node dist/index.js",
-    "test": "test"
+    "start": "tsc && node dist/index.js",
+    "schedule": "tsc && node dist/schedule.js",
+    "process:start": "tsc && forever start dist/schedule.js",
+    "process:stop": "tsc && forever stop dist/schedule.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,8 @@
     "@types/lodash": "^4.14.57",
     "@types/node": "^7.0.8",
     "colors": "^1.1.2",
-    "crawler": "^1.0.3"
+    "crawler": "^1.0.3",
+    "forever": "^0.15.3",
+    "node-schedule": "^1.2.1"
   }
 }
